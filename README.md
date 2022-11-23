@@ -2,7 +2,7 @@
 """  
 Author: Mingyu Kang   
 E-Mail: kangmingyu@seu.edu.cn   
-institutes: CCCS lab, Southeast University   
+Institutes: CCCS lab, Southeast University   
 """   
 
 This code is uploaded for other researchers to follow.   
