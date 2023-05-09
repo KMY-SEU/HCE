@@ -17,7 +17,7 @@ Moreover, please cite this work via
 &emsp;title={Identifying Unique Causal Network from Nonstationary Time Series},  
 &emsp;author={Kang, Mingyu and Chen, Duxin and Meng, Ning and Yan, Gang and Yu, Wenwu},  
 &emsp;journal={arXiv preprint arXiv:2211.10085},  
-&emsp;doi={https://doi.org/10.48550/arXiv.2211.10085},  
+&emsp;doi={https://doi.org/10.48550/arXiv.2211.10085 },  
 &emsp;year={2022}  
 }  
 
