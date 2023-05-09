@@ -14,10 +14,10 @@ scikit-learn == 0.24.2
 
 Moreover, please cite this work via  
 @article{ucn2022arxiv,  
-  title={Identifying Unique Causal Network from Nonstationary Time Series},  
-  author={Kang, Mingyu and Chen, Duxin and Meng, Ning and Yan, Gang and Yu, Wenwu},  
-  journal={arXiv preprint arXiv:2211.10085},  
-  doi={\url{https://doi.org/10.48550/arXiv.2211.10085}},  
-  year={2022}  
+&emsp;title={Identifying Unique Causal Network from Nonstationary Time Series},  
+&emsp;author={Kang, Mingyu and Chen, Duxin and Meng, Ning and Yan, Gang and Yu, Wenwu},  
+&emsp;journal={arXiv preprint arXiv:2211.10085},  
+&emsp;doi={\url{https://doi.org/10.48550/arXiv.2211.10085}},  
+&emsp;year={2022}  
 }  
 
