@@ -5,9 +5,9 @@ E-Mail: kangmingyu@seu.edu.cn
 Institutes: CCCS lab, Southeast University   
 """   
 
-This is the code of **Higher-order Causal Entropy (HCE) algorithm** in research work **"Identifying Unique Causal Network from Nonstationary Time Series"** submitted in 2022. The manuscript is available at website: https://arxiv.org/abs/2211.10085. This code is uploaded, and opened for other researchers to use. Many thanks for suggestions and supports!
+This is the code of **Higher-order Causal Entropy (HCE) algorithm** in research work **"Identifying Unique Causal Network from Nonstationary Time Series"** submitted in 2022. The manuscript is available at website: https://arxiv.org/abs/2211.10085. This code is uploaded, and opened for other researchers to use.
 
-The main packages on Python 3.6 is as follows:   
+The main requirements on Python 3.6 is as follows:   
 numpy == 1.19.5   
 pandas == 1.1.5   
 scikit-learn == 0.24.2   
@@ -21,3 +21,4 @@ Moreover, please cite this work via
 &emsp;year={2022}  
 }  
 
+Many thanks for suggestions and supports!
