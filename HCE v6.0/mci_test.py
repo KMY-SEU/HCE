@@ -27,11 +27,11 @@ def causal_entropy(samples, i, j, K, k_ksg=14):
     mi_jK = mi_ksg(samples[:, [j] + K], k=k_ksg)
 
     if len(K) == 1:
-        # I(X, Y, Z) = I(X, Y, Z) - I(X, Z) - I(Y, Z)
+        # I(X, Y| Z) = I(X, Y, Z) - I(X, Z) - I(Y, Z)
         # return np.maximum(0, mi_ijK - mi_iK - mi_jK)
         return mi_ijK - mi_iK - mi_jK
     else:
-        # I(X, Y, ..., Z) = I(X, Y, ..., Z) - I(X, ..., Z) - I(Y, ..., Z) + I(..., Z)
+        # I(X, Y|Z, ...) = I(X, Y, ..., Z) - I(X, ..., Z) - I(Y, ..., Z) + I(..., Z)
         mi_K = mi_ksg(samples[:, K], k=k_ksg)
         # return np.maximum(0, mi_ijK - mi_iK - mi_jK + mi_K)
         return mi_ijK - mi_iK - mi_jK + mi_K
@@ -39,7 +39,7 @@ def causal_entropy(samples, i, j, K, k_ksg=14):
 
 def mci_test(samples, i, j, K, alpha=0.05, k_ksg=15):
     """
-    Multivariable conditional independence test
+    Multivariable conditional independence ccm
 
     :param samples: the collected samples
     :param i: the target node i
@@ -50,25 +50,22 @@ def mci_test(samples, i, j, K, alpha=0.05, k_ksg=15):
     :return: whether satisfied conditional independence
     """
     if len(K) == 0:
-        # # if K is empty, then implement granger causality test
-        # gc = grangercausalitytests(samples[:, [i, j]], maxlag=1, verbose=True)
-        # p_value = gc[1][0]['lrtest'][1]  # the p value of likelihood ratio test
         mi = mi_ksg(samples[:, [i, j]])
 
         if mi < alpha:
-            return False, mi
+            return True, mi
         else:
             # conditional independence
-            return True, mi
+            return False, mi
 
     # estimate I(i, j | K) by original data
     ce = causal_entropy(samples, i, j, K, k_ksg=k_ksg)
 
     # judge whether mci
     if ce < alpha:
-        # print('i', i, 'j', j, 'K', K, cmi)
-        # print('samples', samples[:10])
         # conditional independence
         return True, ce
     else:
         return False, ce
+
+
