@@ -13,7 +13,7 @@ pandas == 1.1.5
 scikit-learn == 0.24.2   
 
 Moreover, please cite this work via  
-@article{STBN2024, 
+@article{STBN2024,   
 &nbsp;&nbsp;&nbsp;&nbsp;author={Kang, Mingyu and Chen, Duxin and Meng, Ning and Yan, Gang and Yu, Wenwu},  
 &nbsp;&nbsp;&nbsp;&nbsp;journal={IEEE Transactions on Artificial Intelligence},    
 &nbsp;&nbsp;&nbsp;&nbsp;title={Identifying Unique Spatial-Temporal Bayesian Network without Markov Equivalence},    
