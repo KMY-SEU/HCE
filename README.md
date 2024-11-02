@@ -19,7 +19,7 @@ Moreover, please cite this work via
   title={Identifying Unique Spatial-Temporal Bayesian Network without Markov Equivalence},    
   year={2024},   
   pages={1-10},   
-  doi={10.1109/TAI.2024.3483188} 
+  doi={10.1109/TAI.2024.3483188}   
 }
 
 Many thanks for suggestions and supports!
