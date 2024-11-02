@@ -14,12 +14,12 @@ scikit-learn == 0.24.2
 
 Moreover, please cite this work via  
 @article{STBN2024, 
-&nbsp;&nbsp;author={Kang, Mingyu and Chen, Duxin and Meng, Ning and Yan, Gang and Yu, Wenwu},  
-&nbsp;&nbsp;journal={IEEE Transactions on Artificial Intelligence},    
-&nbsp;&nbsp;title={Identifying Unique Spatial-Temporal Bayesian Network without Markov Equivalence},    
-&nbsp;&nbsp;year={2024},   
-&nbsp;&nbsp;pages={1-10},   
-&nbsp;&nbsp;doi={10.1109/TAI.2024.3483188}   
+&nbsp;&nbsp;&nbsp;&nbsp;author={Kang, Mingyu and Chen, Duxin and Meng, Ning and Yan, Gang and Yu, Wenwu},  
+&nbsp;&nbsp;&nbsp;&nbsp;journal={IEEE Transactions on Artificial Intelligence},    
+&nbsp;&nbsp;&nbsp;&nbsp;title={Identifying Unique Spatial-Temporal Bayesian Network without Markov Equivalence},    
+&nbsp;&nbsp;&nbsp;&nbsp;year={2024},   
+&nbsp;&nbsp;&nbsp;&nbsp;pages={1-10},   
+&nbsp;&nbsp;&nbsp;&nbsp;doi={10.1109/TAI.2024.3483188}   
 }
 
 Many thanks for suggestions and supports!
